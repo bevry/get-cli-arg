@@ -1,5 +1,5 @@
 import getarg from './'
-import { deepEqual } from 'assert-helpers'
+import { equal, deepEqual } from 'assert-helpers'
 import kava from 'kava'
 
 const args = [
@@ -26,5 +26,8 @@ kava.suite('get-cli-arg', function(suite, test) {
 		test(key, function() {
 			deepEqual(actual, expected)
 		})
+	})
+	test('invalid', function() {
+		equal(typeof getarg(args, 'z'), 'undefined')
 	})
 })
