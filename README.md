@@ -47,8 +47,8 @@ Get the value of a CLI argument
 <p>This package is published with the following editions:</p>
 
 <ul><li><code>get-cli-arg/source/index.ts</code> is typescript source code with import for modules</li>
-<li><code>get-cli-arg</code> aliases <code>get-cli-arg/edition-node-13/index.js</code></li>
-<li><code>get-cli-arg/edition-node-13/index.js</code> is typescript compiled for node.js 13 with require for modules</li></ul>
+<li><code>get-cli-arg</code> aliases <code>get-cli-arg/edition-node-12/index.js</code></li>
+<li><code>get-cli-arg/edition-node-12/index.js</code> is typescript compiled for node.js 12 with require for modules</li></ul>
 
 <!-- /INSTALL -->
 
