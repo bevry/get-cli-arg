@@ -9,7 +9,7 @@ const args = [
 	'--d=false',
 	'--e="hello"',
 	'--f=1.1',
-	'--g={"a":true}'
+	'--g={"a":true}',
 ]
 const expectations = {
 	a: true,
@@ -18,16 +18,16 @@ const expectations = {
 	d: false,
 	e: 'hello',
 	f: 1.1,
-	g: { a: true }
+	g: { a: true },
 }
-kava.suite('get-cli-arg', function(suite, test) {
-	Object.entries(expectations).forEach(function([key, expected]) {
+kava.suite('get-cli-arg', function (suite, test) {
+	Object.entries(expectations).forEach(function ([key, expected]) {
 		const actual = getarg(args, key)
-		test(key, function() {
+		test(key, function () {
 			deepEqual(actual, expected)
 		})
 	})
-	test('invalid', function() {
+	test('invalid', function () {
 		equal(typeof getarg(args, 'z'), 'undefined')
 	})
 })

@@ -1,5 +1,8 @@
 import normalify from 'normalify'
-export default function(args: Array<string> = process.argv, name: string): any {
+export default function (
+	args: Array<string> = process.argv,
+	name: string
+): any {
 	for (const arg of args) {
 		let value = null
 		// matcha rg

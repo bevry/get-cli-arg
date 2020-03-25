@@ -1,22 +1,25 @@
+version: ~> 1.0
 sudo: false
 language: node_js
 node_js:
-- '8'
-- '10'
-- '12'
-- '13'
+  - '10'
+  - '12'
 matrix:
   fast_finish: true
   allow_failures: []
 cache: npm
 install:
-- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/c91c9d5eef34ecb0e92029667fd5052640225fa3/scripts/node-install.bash)"
+  - >-
+    eval "$(curl -fsSL
+    https://raw.githubusercontent.com/bevry/awesome-travis/c91c9d5eef34ecb0e92029667fd5052640225fa3/scripts/node-install.bash)"
 before_script:
-- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/c91c9d5eef34ecb0e92029667fd5052640225fa3/scripts/node-verify.bash)"
+  - >-
+    eval "$(curl -fsSL
+    https://raw.githubusercontent.com/bevry/awesome-travis/c91c9d5eef34ecb0e92029667fd5052640225fa3/scripts/node-verify.bash)"
 after_success:
-- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/c91c9d5eef34ecb0e92029667fd5052640225fa3/scripts/surge.bash)"
-- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/c91c9d5eef34ecb0e92029667fd5052640225fa3/scripts/node-publish.bash)"
-notifications:
-  email:
-    recipients:
-      secure: gWtsks40jIIHQF6yybBUXVRuSfq2/1bIqxzhwsTyWo9IKPK0BxKZN3xCDdw85HxlefxvpI/ZJuSPilHW+CX0GnGt8s6h4iH0ZrACLwLM0ujH2KbwJ+3zEgR1cEff/ZxkZXQxFEgWVZ2AsU2vxTuQCWZuHLJ3ibMYsEeRyGAGFSRdViIjkRZkT/u+YJhDiRmPQTNlOjv0Z82sKgzq3+YQ17lwchPcUSXc/q/9+l4Wy/3bP5epH5Ef5Y9jzbhl7+7SqO7kVc/23Y5tGnKvQOSx7i/7gPSm+j6dRoj8xXgpgZou6tpAEuv3I2ZOLSpDigG0Z0nTDkgtWllTVg/eL24hdVwpc4SKV9jyCzWQqqrPhWoQGBiapYIufmZdInIysZK2v/hD3ole0sHuKw1i2EqrmWc6rew+fsxpoJSVHZQeDSLftiPA1U/BLDmdWuH0QTwSPLSAZwJjpxZA+DGxVKw4oGwHM/7t0HkgcH+E5AeYlFuwdFXVmIyO5mGxtsaIbLXP9A93y/EsA/n3VnR1qOV++pTFBp3IMtD3Ylax4ZMxJj6+pC8Z7ekbleYmIN3/0lbHk945WHnbcnLo8J/Kai2cXPHfbGInTqnKF6Dx/+mecDPGNw14+0OE4+uTiVQdnVB5en2WEcJpishQpgCFoTeKNbDea/0oQ8dll5Rm/qudtzo=
+  - >-
+    eval "$(curl -fsSL
+    https://raw.githubusercontent.com/bevry/awesome-travis/c91c9d5eef34ecb0e92029667fd5052640225fa3/scripts/surge.bash)"
+  - >-
+    eval "$(curl -fsSL
+    https://raw.githubusercontent.com/bevry/awesome-travis/c91c9d5eef34ecb0e92029667fd5052640225fa3/scripts/node-publish.bash)"
