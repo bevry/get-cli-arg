@@ -48,7 +48,8 @@ Uses [normalify](https://github.com/bevry/normalify) for value parsing.
 
 ```javascript
 import getarg from 'get-cli-arg'
-console.log(getarg(process.argv, 'arg'))
+console.log(getarg('arg'))
+console.log(getarg('arg', process.argv))
 ```
 
 <!-- INSTALL/ -->

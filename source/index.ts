@@ -1,7 +1,7 @@
 import normalify from 'normalify'
 export default function (
-	args: Array<string> = process.argv,
-	name: string
+	name: string,
+	args: Array<string> = process.argv
 ): any {
 	for (const arg of args) {
 		let value = null

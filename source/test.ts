@@ -22,12 +22,12 @@ const expectations = {
 }
 kava.suite('get-cli-arg', function (suite, test) {
 	Object.entries(expectations).forEach(function ([key, expected]) {
-		const actual = getarg(args, key)
+		const actual = getarg(key, args)
 		test(key, function () {
 			deepEqual(actual, expected)
 		})
 	})
 	test('invalid', function () {
-		equal(typeof getarg(args, 'z'), 'undefined')
+		equal(typeof getarg('z', args), 'undefined')
 	})
 })
