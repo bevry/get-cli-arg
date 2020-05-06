@@ -37,8 +37,6 @@ Get the value of a CLI argument
 
 [Complete API Documentation.](https://cdn.bevry.me/get-cli-arg/master/docs/globals.html)
 
-[Complete API Documentation.](https://cdn.bevry.me/get-cli-arg/master/docs/globals.html)
-
 Supports fetching the value of an argument with the following convention:
 
 -   `--arg` => `true`
