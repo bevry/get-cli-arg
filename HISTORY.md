@@ -1,5 +1,9 @@
 # History
 
+## v5.1.0 2020 May 13
+
+-   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
+
 ## v5.0.0 2020 May 6
 
 -   Backwards Compatibility Break: Changed the argument order, so now you only have to specify an argument name, and optionally the argument list

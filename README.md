@@ -35,7 +35,7 @@ Get the value of a CLI argument
 
 ## Usage
 
-[Complete API Documentation.](https://cdn.bevry.me/get-cli-arg/master/docs/globals.html)
+[Complete API Documentation.](http://master.get-cli-arg.bevry.surge.sh/docs/globals.html)
 
 Supports fetching the value of an argument with the following convention:
 
@@ -120,9 +120,8 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li>Benjamin Lupton</li>
-<li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/get-cli-arg/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/get-cli-arg">view contributions</a></li>
-<li><a href="http://github.com/apps/dependabot-preview">dependabot-preview[bot]</a> — <a href="https://github.com/bevry/get-cli-arg/commits?author=dependabot-preview[bot]" title="View the GitHub contributions of dependabot-preview[bot] on repository bevry/get-cli-arg">view contributions</a></li></ul>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/get-cli-arg/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/get-cli-arg">view contributions</a></li>
+<li>Benjamin Lupton</li></ul>
 
 <a href="https://github.com/bevry/get-cli-arg/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
