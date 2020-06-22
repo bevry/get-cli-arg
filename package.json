@@ -99,7 +99,7 @@
   "type": "commonjs",
   "main": "edition-esnext/index.js",
   "dependencies": {
-    "normalify": "2.11.0"
+    "normalify": "2.15.0"
   },
   "devDependencies": {
     "@bevry/update-contributors": "^1.9.0",
