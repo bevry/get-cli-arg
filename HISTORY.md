@@ -1,5 +1,11 @@
 # History
 
+## v6.0.0 2020 June 25
+
+-   Only support arguments that are prefixed with `--` or `--no-`
+-   Added support for `--no-` inversion
+-   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
+
 ## v5.8.0 2020 June 21
 
 -   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
