@@ -1,4 +1,4 @@
-import getarg from './'
+import getarg from './index.js'
 import { equal, deepEqual } from 'assert-helpers'
 import kava from 'kava'
 
@@ -10,7 +10,11 @@ const args = [
 	'--e="hello"',
 	'--f=1.1',
 	'--g={"a":true}',
+	'--no-h',
+	'--no-i=false',
+	'--no-j=true',
 ]
+
 const expectations = {
 	a: true,
 	b: false,
@@ -19,6 +23,9 @@ const expectations = {
 	e: 'hello',
 	f: 1.1,
 	g: { a: true },
+	h: false,
+	i: true,
+	j: false,
 }
 kava.suite('get-cli-arg', function (suite, test) {
 	Object.entries(expectations).forEach(function ([key, expected]) {
