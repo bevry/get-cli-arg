@@ -1,5 +1,6 @@
 import { argv } from 'process'
 import normalify from 'normalify'
+import { bool } from 'assert-helpers/compiled-types'
 
 /**
  * Get the value of a CLI argument that is provided via:
@@ -13,29 +14,27 @@ import normalify from 'normalify'
  */
 export default function (name: string, args: Array<string> = argv): any {
 	for (const arg of args) {
-		let value: any,
-			invert = false
-		// match arg
-		if (arg.startsWith('--' + name)) {
-			value = arg.substring(name.length + 2)
-		} else if (arg.startsWith('--no-' + name)) {
-			value = arg.substring(name.length + 5)
-			invert = true
-		} else {
-			// not found in this argument, continue to next argument
-			continue
-		}
-		// adapt the value
-		if (value === '') {
+		// match
+		const regexp = new RegExp(`^--(no-)?${name}(?:[=\\s](.*))?$`, 'i')
+		const match = arg.match(regexp)
+
+		// not found in this argument, continue to next argument
+		if (!match) continue
+
+		// extract
+		const invert = Boolean(match[1])
+		const raw: any = match[2]
+
+		// process value
+		let value: any
+		if (typeof raw === 'undefined') {
 			value = true
-		} else if (value[0] === '=') {
-			value = value.substring(1)
-			if (value === '') {
-				value = false
-			} else {
-				value = normalify(value)
-			}
+		} else if (raw === '') {
+			value = false
+		} else {
+			value = normalify(raw)
 		}
+
 		// return the value, and invert it if necessary
 		return invert ? !value : value
 	}

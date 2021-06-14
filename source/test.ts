@@ -13,6 +13,12 @@ const args = [
 	'--no-h',
 	'--no-i=false',
 	'--no-j=true',
+	'--ab',
+	'--l=',
+	'--m space',
+	'--n\ttab',
+	'--o\nnewline',
+	'--no-p false',
 ]
 
 const expectations = {
@@ -26,11 +32,18 @@ const expectations = {
 	h: false,
 	i: true,
 	j: false,
+	ab: true,
+	l: false,
+	m: 'space',
+	n: 'tab',
+	o: 'newline',
+	p: true,
 }
+
 kava.suite('get-cli-arg', function (suite, test) {
 	Object.entries(expectations).forEach(function ([key, expected]) {
-		const actual = getarg(key, args)
 		test(key, function () {
+			const actual = getarg(key, args)
 			deepEqual(actual, expected)
 		})
 	})
