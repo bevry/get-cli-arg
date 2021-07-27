@@ -1,5 +1,9 @@
 # History
 
+## v7.1.0 2021 July 28
+
+-   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
+
 ## v7.0.0 2021 June 14
 
 -   Fixes a bug where if say arguments `a` and `ab` are present, and you want to fetch argument `a`, the value of `ab` could be returned
