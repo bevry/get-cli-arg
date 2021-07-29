@@ -35,7 +35,7 @@ Get the value of a CLI argument
 
 ## Usage
 
-[Complete API Documentation.](http://master.get-cli-arg.bevry.surge.sh/docs/globals.html)
+[Complete API Documentation.](http://master.get-cli-arg.bevry.surge.sh/docs/)
 
 Supports fetching the value of an argument with the following convention:
 
