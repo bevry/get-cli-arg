@@ -1,6 +1,5 @@
 import { argv } from 'process'
 import normalify from 'normalify'
-import { bool } from 'assert-helpers/compiled-types'
 
 /**
  * Get the value of a CLI argument that is provided via:
