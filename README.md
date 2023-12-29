@@ -63,7 +63,7 @@ console.log(getarg('arg', process.argv))
 ### [Deno](https://deno.land "Deno is a secure runtime for JavaScript and TypeScript, it is an alternative for Node.js")
 
 ``` typescript
-import pkg from 'https://unpkg.com/get-cli-arg@^8.5.0/edition-deno/index.ts'
+import pkg from 'https://unpkg.com/get-cli-arg@^8.6.0/edition-deno/index.ts'
 ```
 ### [Editions](https://editions.bevry.me "Editions are the best way to produce and consume packages you care about.")
 
@@ -99,7 +99,7 @@ This package is published with the following editions:
 
 #### Maintainers
 
--   [Benjamin Lupton](https://github.com/balupton) — Accelerating collaborative wisdom.
+-   [Benjamin Lupton](https://balupton.com) — Accelerating collaborative wisdom.
 
 #### Contributors
 
@@ -120,7 +120,7 @@ This package is published with the following editions:
 
 -   [Andrew Nesbitt](https://nesbitt.io) — Software engineer and researcher
 -   [Balsa](https://balsa.com) — We're Balsa, and we're building tools for builders.
--   [Codecov](https://codecov.io/) — Empower developers with tools to improve code quality and testing.
+-   [Codecov](https://codecov.io) — Empower developers with tools to improve code quality and testing.
 -   [Poonacha Medappa](https://poonachamedappa.com)
 -   [Rob Morris](https://github.com/Rob-Morris)
 -   [Sentry](https://sentry.io) — Real-time crash reporting for your web apps, mobile apps, and games.
@@ -129,19 +129,30 @@ This package is published with the following editions:
 #### Donors
 
 -   [Andrew Nesbitt](https://nesbitt.io)
+-   [Armen Mkrtchian](https://mogoni.dev)
 -   [Balsa](https://balsa.com)
 -   [Chad](https://opencollective.com/chad8)
--   [Codecov](https://codecov.io/)
+-   [Codecov](https://codecov.io)
+-   [dr.dimitru](https://veliovgroup.com)
+-   [Elliott Ditman](https://elliottditman.com)
 -   [entroniq](https://gitlab.com/entroniq)
+-   [GitHub](https://github.com/about)
+-   [Hunter Beast](https://cryptoquick.com)
 -   [Jean-Luc Geering](https://github.com/jlgeering)
 -   [Michael Duane Mooring](https://mdm.cc)
+-   [Michael Harry Scepaniak](https://michaelscepaniak.com)
 -   [Mohammed Shah](https://github.com/smashah)
+-   [Mr. Henry](https://mrhenry.be)
+-   [Nermal](https://arjunaditya.vercel.app)
+-   [Pleo](https://pleo.io)
 -   [Poonacha Medappa](https://poonachamedappa.com)
 -   [Rob Morris](https://github.com/Rob-Morris)
+-   [Robert de Forest](https://github.com/rdeforest)
 -   [Sentry](https://sentry.io)
 -   [ServieJS](https://github.com/serviejs)
 -   [Skunk Team](https://skunk.team)
 -   [Syntax](https://syntax.fm)
+-   [WriterJohnBuck](https://github.com/WriterJohnBuck)
 
 <!-- /BACKERS -->
 
